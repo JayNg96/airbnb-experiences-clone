@@ -1,8 +1,15 @@
+* {
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+
 body {
   margin: 0;
   font-family: Poppins;
   box-sizing: border-box;
 }
+
 /* header */
 nav {
   display: flex;
@@ -24,13 +31,12 @@ nav {
 #hero-photo-grid {
   display: block;
   margin: 0 auto;
-  width: 70%;
+  width: 1200px;
 }
 
 #hero > #hero-text-title {
   font-size: 3.25rem;
   margin-top: 80px;
-
 }
 
 #hero > #hero-text-description {
@@ -41,15 +47,28 @@ nav {
 /* hero */
 
 /* cards */
+.cards {
+  display: flex;
+  margin: 2rem 3.5rem;
+  gap: 2rem;
+  overflow-x: auto;
+}
 
 #cards-section {
-  margin: 2rem 3.5rem;
-  width: 16.5rem;
+  width: 20.5rem;
+  flex: 0 0 auto;
+  position: relative;
+}
+
+#cards-section:hover {
+  opacity: 0.7;
+  transition-duration: 1s;
 }
 
 #cards-section > p {
   margin: 0;
   width: 100%;
+  font-size: 1.1rem;
 }
 
 #cards-section > p > .bold-text {
@@ -73,7 +92,7 @@ nav {
 }
 
 .cards-rating > p {
-  font-size: 1.4rem;
+  font-size: 1.1rem;
   margin: 0;
 }
 
@@ -81,9 +100,14 @@ nav {
   color: #918E9B;
 }
 
+.card-badge {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  background-color: white;
+  padding: 5px 7px;
+  border-radius: 2px;
+  font-weight: bold;
+}
 
-
-
-
-
-/* hero */
+/* cards */
