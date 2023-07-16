@@ -2,7 +2,7 @@ export function Header() {
     return (
         <header>
             <nav>
-              <img id="airbnb-logo" src="./images/airbnb-logo.png"></img>
+              <img id="airbnb-logo" src="./images/airbnb-logo.png"/>
             </nav>
         </header>
     )
